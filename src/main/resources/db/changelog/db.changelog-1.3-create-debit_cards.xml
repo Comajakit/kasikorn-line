@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <changeSet id="1.3" author="comajakit">
+        <createTable tableName="debit_cards">
+            <column name="card_id" type="varchar(50)">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="status" type="varchar(20)"/>
+            <column name="user_id" type="varchar(50)"/>
+            <column name="account_id" type="varchar(50)">
+                <constraints unique="true" nullable="false"/>
+            </column>
+            <column name="name" type="varchar(100)"/>
+            <column name="issuer" type="varchar(100)"/>
+            <column name="number" type="varchar(25)">
+                <constraints unique="true" nullable="false"/>
+            </column>
+            <column name="color" type="varchar(10)"/>
+            <column name="border_color" type="varchar(10)"/>
+            <column name="created_at" type="timestamp" defaultValueComputed="CURRENT_TIMESTAMP"/>
+            <column name="updated_at" type="timestamp" defaultValueComputed="CURRENT_TIMESTAMP"/>
+        </createTable>
+
+        <createIndex indexName="idx_debit_cards_user_id" tableName="debit_cards">
+            <column name="user_id"/>
+        </createIndex>
+        <createIndex indexName="idx_debit_cards_account_id" tableName="debit_cards">
+            <column name="account_id"/>
+        </createIndex>
+        <sql>
+            ALTER TABLE accounts
+            MODIFY COLUMN updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP;
+        </sql>
+    </changeSet>
+
+</databaseChangeLog>

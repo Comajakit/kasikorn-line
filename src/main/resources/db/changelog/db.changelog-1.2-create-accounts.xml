@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <changeSet id="1.2" author="comajakit">
+        <createTable tableName="accounts">
+            <column name="account_id" type="varchar(50)">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="user_id" type="varchar(50)"/>
+            <column name="account_name" type="varchar(50)"/>
+            <column name="color" type="varchar(10)"/>
+            <column name="is_main_account" type="tinyint(1)"/>
+            <column name="progress" type="int"/>
+            <column name="account_status" type="varchar(20)"/>
+            <column name="type" type="varchar(50)"/>
+            <column name="currency" type="varchar(10)"/>
+            <column name="account_balance" type="decimal(15,2)"/>
+            <column name="saving_goal" type="decimal(15,2)"/>
+            <column name="account_number" type="varchar(20)"/>
+            <column name="issuer" type="varchar(100)"/>
+            <column name="due_date" type="timestamp"/>
+            <column name="payment_accml" type="decimal(15,2)"/>
+            <column name="interest_accml" type="decimal(15,2)"/>
+            <column name="remaining" type="decimal(15,2)"/>
+            <column name="loan_amount" type="decimal(15,2)"/>
+            <column name="interest_rate" type="decimal(5,2)"/>
+            <column name="loan_term" type="int"/>
+            <column name="loan_start_date" type="timestamp"/>
+            <column name="created_at" type="timestamp" defaultValueComputed="CURRENT_TIMESTAMP"/>
+            <column name="updated_at" type="timestamp" defaultValueComputed="CURRENT_TIMESTAMP"/>
+        </createTable>
+        <createIndex indexName="idx_accounts_user_id" tableName="accounts">
+            <column name="user_id"/>
+        </createIndex>
+        <createIndex indexName="idx_accounts_account_id" tableName="accounts">
+            <column name="account_id"/>
+        </createIndex>
+        <sql>
+            ALTER TABLE accounts
+            MODIFY COLUMN updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP;
+        </sql>
+    </changeSet>
+</databaseChangeLog>

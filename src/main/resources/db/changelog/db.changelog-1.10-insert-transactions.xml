@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+   http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <changeSet id="1.10" author="comajakit">
+
+        <insert tableName="transactions">
+            <column name="transaction_id" value="0011a1e1a211ef95a30242ac180002"/>
+            <column name="user_id" value="user001"/>
+            <column name="account_id" value="u001-s001"/>
+            <column name="transaction_type" value="DEPOSIT"/>
+            <column name="amount" valueNumeric="1500.00"/>
+            <column name="name" value="John Doe"/>
+            <column name="image" value="https://dummyimage.com/54x54/123/fff"/>
+            <column name="is_bank" valueBoolean="true"/>
+        </insert>
+
+        <insert tableName="transactions">
+            <column name="transaction_id" value="0011b2e1a211ef95a30242ac180003"/>
+            <column name="user_id" value="user001"/>
+            <column name="account_id" value="u001-sg001"/>
+            <column name="transaction_type" value="WITHDRAW"/>
+            <column name="amount" valueNumeric="500.00"/>
+            <column name="name" value="Shop A"/>
+            <column name="image" value="https://dummyimage.com/54x54/456/fff"/>
+            <column name="is_bank" valueBoolean="false"/>
+        </insert>
+
+        <insert tableName="transactions">
+            <column name="transaction_id" value="0011c3e1a211ef95a30242ac180004"/>
+            <column name="user_id" value="user001"/>
+            <column name="account_id" value="u001-l001"/>
+            <column name="transaction_type" value="PAYMENT"/>
+            <column name="amount" valueNumeric="2500.00"/>
+            <column name="name" value="Loan Payment"/>
+            <column name="image" value="https://dummyimage.com/54x54/789/fff"/>
+            <column name="is_bank" valueBoolean="true"/>
+        </insert>
+        <insert tableName="transactions">
+            <column name="transaction_id" value="0011d4e1a211ef95a30242ac180005"/>
+            <column name="user_id" value="user002"/>
+            <column name="account_id" value="u002-s001"/>
+            <column name="transaction_type" value="QR_PAYMENT"/>
+            <column name="amount" valueNumeric="200.00"/>
+            <column name="name" value="Coffee Shop"/>
+            <column name="image" value="https://dummyimage.com/54x54/321/fff"/>
+            <column name="is_bank" valueBoolean="false"/>
+        </insert>
+
+        <insert tableName="transactions">
+            <column name="transaction_id" value="0011e5e1a211ef95a30242ac180006"/>
+            <column name="user_id" value="user002"/>
+            <column name="account_id" value="u002-sg001"/>
+            <column name="transaction_type" value="DEPOSIT"/>
+            <column name="amount" valueNumeric="1000.00"/>
+            <column name="name" value="Bonus Deposit"/>
+            <column name="image" value="https://dummyimage.com/54x54/654/fff"/>
+            <column name="is_bank" valueBoolean="true"/>
+        </insert>
+
+        <insert tableName="transactions">
+            <column name="transaction_id" value="0011f6e1a211ef95a30242ac180007"/>
+            <column name="user_id" value="user002"/>
+            <column name="account_id" value="u002-l001"/>
+            <column name="transaction_type" value="PAYMENT"/>
+            <column name="amount" valueNumeric="3200.00"/>
+            <column name="name" value="Loan Repayment"/>
+            <column name="image" value="https://dummyimage.com/54x54/987/fff"/>
+            <column name="is_bank" valueBoolean="true"/>
+        </insert>
+
+
+        <insert tableName="transactions">
+            <column name="transaction_id" value="0011g7e1a211ef95a30242ac180008"/>
+            <column name="user_id" value="user003"/>
+            <column name="account_id" value="u003-s001"/>
+            <column name="transaction_type" value="WITHDRAW"/>
+            <column name="amount" valueNumeric="750.00"/>
+            <column name="name" value="Online Shopping"/>
+            <column name="image" value="https://dummyimage.com/54x54/111/fff"/>
+            <column name="is_bank" valueBoolean="false"/>
+        </insert>
+
+        <insert tableName="transactions">
+            <column name="transaction_id" value="0011h8e1a211ef95a30242ac180009"/>
+            <column name="user_id" value="user003"/>
+            <column name="account_id" value="u003-sg001"/>
+            <column name="transaction_type" value="DEPOSIT"/>
+            <column name="amount" valueNumeric="3000.00"/>
+            <column name="name" value="Salary Bonus"/>
+            <column name="image" value="https://dummyimage.com/54x54/222/fff"/>
+            <column name="is_bank" valueBoolean="true"/>
+        </insert>
+
+        <insert tableName="transactions">
+            <column name="transaction_id" value="0011i9e1a211ef95a30242ac180010"/>
+            <column name="user_id" value="user003"/>
+            <column name="account_id" value="u003-l001"/>
+            <column name="transaction_type" value="PAYMENT"/>
+            <column name="amount" valueNumeric="2800.00"/>
+            <column name="name" value="Loan Installment"/>
+            <column name="image" value="https://dummyimage.com/54x54/333/fff"/>
+            <column name="is_bank" valueBoolean="true"/>
+        </insert>
+
+    </changeSet>
+</databaseChangeLog>

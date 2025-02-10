@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.6.xsd">
+
+    <include file="/db/changelog/db.changelog-1.0-create-users.xml"/>
+    <include file="/db/changelog/db.changelog-1.1-create-account_flags.xml"/>
+    <include file="/db/changelog/db.changelog-1.2-create-accounts.xml"/>
+    <include file="/db/changelog/db.changelog-1.3-create-debit_cards.xml"/>
+    <include file="/db/changelog/db.changelog-1.4-create-transactions.xml"/>
+    <include file="/db/changelog/db.changelog-1.5-create-banners.xml"/>
+    <include file="/db/changelog/db.changelog-1.6-insert-accounts.xml"/>
+    <include file="/db/changelog/db.changelog-1.7-insert-account_flags.xml"/>
+    <include file="/db/changelog/db.changelog-1.8-insert-banners.xml"/>
+    <include file="/db/changelog/db.changelog-1.9-insert-users.xml"/>
+    <include file="/db/changelog/db.changelog-1.10-insert-transactions.xml"/>
+    <include file="/db/changelog/db.changelog-1.11-insert-debit_cards.xml"/>
+
+</databaseChangeLog>

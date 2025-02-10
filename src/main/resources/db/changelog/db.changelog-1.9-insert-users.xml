@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+   http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <changeSet id="1.9" author="comajakit">
+        <insert tableName="users">
+            <column name="user_id" value="user001"/>
+            <column name="name" value="Alice"/>
+            <column name="banner_id" value="1"/>
+            <column name="hashed_password" value="$2a$10$zqBGmEx4U9kEBTzM5o2zRuAm5g0QVMdlqmPXoRZgSI3h0eLwsAIjK"/>
+            <column name="greeting" value="Have a nice day Alice"/>
+        </insert>
+
+        <insert tableName="users">
+            <column name="user_id" value="user002"/>
+            <column name="name" value="Bob"/>
+            <column name="banner_id" value="1"/>
+            <column name="hashed_password" value="$2a$10$zqBGmEx4U9kEBTzM5o2zRuAm5g0QVMdlqmPXoRZgSI3h0eLwsAIjK"/>
+            <column name="greeting" value="Have a nice day Bob"/>
+        </insert>
+
+        <insert tableName="users">
+            <column name="user_id" value="user003"/>
+            <column name="name" value="Claire"/>
+            <column name="banner_id" value="1"/>
+            <column name="hashed_password" value="$2a$10$zqBGmEx4U9kEBTzM5o2zRuAm5g0QVMdlqmPXoRZgSI3h0eLwsAIjK"/>
+            <column name="greeting" value="Have a nice day Claire"/>
+        </insert>
+
+        <insert tableName="users">
+            <column name="user_id" value="user004"/>
+            <column name="name" value="David"/>
+            <column name="banner_id" value="1"/>
+            <column name="hashed_password" value="$2a$10$zqBGmEx4U9kEBTzM5o2zRuAm5g0QVMdlqmPXoRZgSI3h0eLwsAIjK"/>
+            <column name="greeting" value="Have a nice day David"/>
+        </insert>
+        <insert tableName="users">
+            <column name="user_id" value="user005"/>
+            <column name="name" value="Eva"/>
+            <column name="banner_id" value="1"/>
+            <column name="hashed_password" value="$2a$10$zqBGmEx4U9kEBTzM5o2zRuAm5g0QVMdlqmPXoRZgSI3h0eLwsAIjK"/>
+            <column name="greeting" value="Have a nice day Eva"/>
+        </insert>
+
+    </changeSet>
+</databaseChangeLog>

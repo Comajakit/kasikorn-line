@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <changeSet id="1.6" author="comajakit">
+        <insert tableName="accounts">
+            <column name="account_id" value="u001-s001"/>
+            <column name="account_name" value="Saving"/>
+            <column name="user_id" value="user001"/>
+            <column name="color" value="#FF0000"/>
+            <column name="is_main_account" valueBoolean="true"/>
+            <column name="type" value="SAVING"/>
+            <column name="currency" value="THB"/>
+            <column name="account_status" value="ACTIVE"/>
+            <column name="account_balance" valueNumeric="20000.00"/>
+            <column name="account_number" value="568-2-45295-8"/>
+            <column name="issuer" value="TestLab"/>
+        </insert>
+        <insert tableName="accounts">
+            <column name="account_id" value="u001-sg001"/>
+            <column name="account_name" value="To the sea"/>
+            <column name="user_id" value="user001"/>
+            <column name="color" value="#00FF00"/>
+            <column name="is_main_account" valueBoolean="false"/>
+            <column name="type" value="SAVING_GOAL"/>
+            <column name="currency" value="THB"/>
+            <column name="account_status" value="ACTIVE"/>
+            <column name="account_balance" valueNumeric="40000.00"/>
+            <column name="saving_goal" valueNumeric="100000.00"/>
+            <column name="progress" valueNumeric="40"/>
+            <column name="account_number" value="568-2-82678-9"/>
+            <column name="issuer" value="TestLab"/>
+        </insert>
+        <insert tableName="accounts">
+            <column name="account_id" value="u001-l001"/>
+            <column name="account_name" value="House Loan"/>
+            <column name="user_id" value="user001"/>
+            <column name="color" value="#AAAAAA"/>
+            <column name="is_main_account" valueBoolean="true"/>
+            <column name="type" value="LOAN"/>
+            <column name="currency" value="USD"/>
+            <column name="account_status" value="ACTIVE"/>
+            <column name="account_balance" valueNumeric="0.00"/>
+            <column name="account_number" value="568-2-21484-9"/>
+            <column name="issuer" value="TestLab"/>
+            <column name="loan_amount" valueNumeric="50000.00"/>
+            <column name="interest_rate" valueNumeric="5.50"/>
+            <column name="loan_term" valueNumeric="24"/>
+            <column name="loan_start_date" valueDate="2025-01-01T00:00:00"/>
+            <column name="due_date" valueDate="2027-01-01T00:00:00"/>
+            <column name="payment_accml" valueNumeric="5000.00"/>
+            <column name="interest_accml" valueNumeric="1500.00"/>
+            <column name="remaining" valueNumeric="45000.00"/>
+        </insert>
+        <insert tableName="accounts">
+            <column name="account_id" value="u002-s001"/>
+            <column name="account_name" value="My Saving"/>
+            <column name="user_id" value="user002"/>
+            <column name="color" value="#F0F0F0"/>
+            <column name="is_main_account" valueBoolean="true"/>
+            <column name="type" value="SAVING"/>
+            <column name="currency" value="USD"/>
+            <column name="account_status" value="ACTIVE"/>
+            <column name="account_balance" valueNumeric="30000.00"/>
+            <column name="account_number" value="568-2-41008-9"/>
+            <column name="issuer" value="TestLab"/>
+        </insert>
+        <insert tableName="accounts">
+            <column name="account_id" value="u002-sg001"/>
+            <column name="account_name" value="Retirement"/>
+            <column name="user_id" value="user002"/>
+            <column name="color" value="#00AA00"/>
+            <column name="is_main_account" valueBoolean="false"/>
+            <column name="type" value="SAVING_GOAL"/>
+            <column name="currency" value="USD"/>
+            <column name="account_status" value="ACTIVE"/>
+            <column name="account_balance" valueNumeric="50000.00"/>
+            <column name="saving_goal" valueNumeric="150000.00"/>
+            <column name="progress" valueNumeric="33"/>
+            <column name="account_number" value="568-2-43088-9"/>
+            <column name="issuer" value="TestLab"/>
+        </insert>
+        <insert tableName="accounts">
+            <column name="account_id" value="u002-l001"/>
+            <column name="account_name" value="BOB"/>
+            <column name="user_id" value="user002"/>
+            <column name="color" value="#BBBBBB"/>
+            <column name="is_main_account" valueBoolean="true"/>
+            <column name="type" value="LOAN"/>
+            <column name="currency" value="JPY"/>
+            <column name="account_status" value="ACTIVE"/>
+            <column name="account_balance" valueNumeric="0.00"/>
+            <column name="account_number" value="568-2-26451-7"/>
+            <column name="issuer" value="TestLab"/>
+            <column name="loan_amount" valueNumeric="60000.00"/>
+            <column name="interest_rate" valueNumeric="4.75"/>
+            <column name="loan_term" valueNumeric="36"/>
+            <column name="loan_start_date" valueDate="2025-06-01T00:00:00"/>
+            <column name="due_date" valueDate="2028-06-01T00:00:00"/>
+            <column name="payment_accml" valueNumeric="7000.00"/>
+            <column name="interest_accml" valueNumeric="2000.00"/>
+            <column name="remaining" valueNumeric="53000.00"/>
+        </insert>
+        <insert tableName="accounts">
+            <column name="account_id" value="u003-s001"/>
+            <column name="account_name" value="MAIN"/>
+            <column name="user_id" value="user003"/>
+            <column name="color" value="#CCCCCC"/>
+            <column name="is_main_account" valueBoolean="true"/>
+            <column name="type" value="SAVING"/>
+            <column name="currency" value="THB"/>
+            <column name="account_status" value="ACTIVE"/>
+            <column name="account_balance" valueNumeric="25000.00"/>
+            <column name="account_number" value="568-2-65258-8"/>
+            <column name="issuer" value="TestLab"/>
+        </insert>
+        <insert tableName="accounts">
+            <column name="account_id" value="u003-sg001"/>
+            <column name="account_name" value="For new car"/>
+            <column name="user_id" value="user003"/>
+            <column name="color" value="#00CC00"/>
+            <column name="is_main_account" valueBoolean="false"/>
+            <column name="type" value="SAVING_GOAL"/>
+            <column name="currency" value="THB"/>
+            <column name="account_status" value="ACTIVE"/>
+            <column name="account_balance" valueNumeric="80000.00"/>
+            <column name="saving_goal" valueNumeric="100000.00"/>
+            <column name="progress" valueNumeric="80"/>
+            <column name="account_number" value="568-2-64929-9"/>
+            <column name="issuer" value="TestLab"/>
+        </insert>
+        <insert tableName="accounts">
+            <column name="account_id" value="u003-l001"/>
+            <column name="account_name" value="Old car"/>
+            <column name="user_id" value="user003"/>
+            <column name="color" value="#888888"/>
+            <column name="is_main_account" valueBoolean="true"/>
+            <column name="type" value="LOAN"/>
+            <column name="currency" value="USD"/>
+            <column name="account_status" value="ACTIVE"/>
+            <column name="account_balance" valueNumeric="0.00"/>
+            <column name="account_number" value="568-2-36556-9"/>
+            <column name="issuer" value="TestLab"/>
+            <column name="loan_amount" valueNumeric="40000.00"/>
+            <column name="interest_rate" valueNumeric="6.00"/>
+            <column name="loan_term" valueNumeric="18"/>
+            <column name="loan_start_date" valueDate="2025-03-01T00:00:00"/>
+            <column name="due_date" valueDate="2026-09-01T00:00:00"/>
+            <column name="payment_accml" valueNumeric="3000.00"/>
+            <column name="interest_accml" valueNumeric="1000.00"/>
+            <column name="remaining" valueNumeric="37000.00"/>
+        </insert>
+        <insert tableName="accounts">
+            <column name="account_id" value="u004-s001"/>
+            <column name="account_name" value="Saving"/>
+            <column name="user_id" value="user004"/>
+            <column name="color" value="#FFAA00"/>
+            <column name="is_main_account" valueBoolean="true"/>
+            <column name="type" value="SAVING"/>
+            <column name="currency" value="USD"/>
+            <column name="account_status" value="ACTIVE"/>
+            <column name="account_balance" valueNumeric="35000.00"/>
+            <column name="account_number" value="568-2-76839-9"/>
+            <column name="issuer" value="TestLab"/>
+        </insert>
+        <insert tableName="accounts">
+            <column name="account_id" value="u004-sg001"/>
+            <column name="account_name" value="Just for fun"/>
+            <column name="user_id" value="user004"/>
+            <column name="color" value="#00FFAA"/>
+            <column name="is_main_account" valueBoolean="false"/>
+            <column name="type" value="SAVING_GOAL"/>
+            <column name="currency" value="USD"/>
+            <column name="account_status" value="ACTIVE"/>
+            <column name="account_balance" valueNumeric="70000.00"/>
+            <column name="saving_goal" valueNumeric="140000.00"/>
+            <column name="progress" valueNumeric="50"/>
+            <column name="account_number" value="568-2-66866-9"/>
+            <column name="issuer" value="TestLab"/>
+        </insert>
+        <insert tableName="accounts">
+            <column name="account_id" value="u004-l001"/>
+            <column name="account_name" value="My debt"/>
+            <column name="user_id" value="user004"/>
+            <column name="color" value="#AAAAAA"/>
+            <column name="is_main_account" valueBoolean="true"/>
+            <column name="type" value="LOAN"/>
+            <column name="currency" value="JPY"/>
+            <column name="account_status" value="ACTIVE"/>
+            <column name="account_balance" valueNumeric="0.00"/>
+            <column name="account_number" value="568-2-69173-1"/>
+            <column name="issuer" value="TestLab"/>
+            <column name="loan_amount" valueNumeric="80000.00"/>
+            <column name="interest_rate" valueNumeric="7.00"/>
+            <column name="loan_term" valueNumeric="48"/>
+            <column name="loan_start_date" valueDate="2025-04-01T00:00:00"/>
+            <column name="due_date" valueDate="2029-04-01T00:00:00"/>
+            <column name="payment_accml" valueNumeric="10000.00"/>
+            <column name="interest_accml" valueNumeric="2500.00"/>
+            <column name="remaining" valueNumeric="70000.00"/>
+        </insert>
+        <insert tableName="accounts">
+            <column name="account_id" value="u005-s001"/>
+            <column name="account_name" value="John Save"/>
+            <column name="user_id" value="user005"/>
+            <column name="color" value="#00FFFF"/>
+            <column name="is_main_account" valueBoolean="true"/>
+            <column name="type" value="SAVING"/>
+            <column name="currency" value="THB"/>
+            <column name="account_status" value="ACTIVE"/>
+            <column name="account_balance" valueNumeric="18000.00"/>
+            <column name="account_number" value="568-2-16832-2"/>
+            <column name="issuer" value="TestLab"/>
+        </insert>
+        <insert tableName="accounts">
+            <column name="account_id" value="u005-sg001"/>
+            <column name="account_name" value="Investment"/>
+            <column name="user_id" value="user005"/>
+            <column name="color" value="#FF00FF"/>
+            <column name="is_main_account" valueBoolean="false"/>
+            <column name="type" value="SAVING_GOAL"/>
+            <column name="currency" value="THB"/>
+            <column name="account_status" value="ACTIVE"/>
+            <column name="account_balance" valueNumeric="45000.00"/>
+            <column name="saving_goal" valueNumeric="90000.00"/>
+            <column name="progress" valueNumeric="50"/>
+            <column name="account_number" value="568-2-34062-3"/>
+            <column name="issuer" value="TestLab"/>
+        </insert>
+        <insert tableName="accounts">
+            <column name="account_id" value="u005-l001"/>
+            <column name="account_name" value="I can't remember"/>
+            <column name="user_id" value="user005"/>
+            <column name="color" value="#777777"/>
+            <column name="is_main_account" valueBoolean="true"/>
+            <column name="type" value="LOAN"/>
+            <column name="currency" value="USD"/>
+            <column name="account_status" value="ACTIVE"/>
+            <column name="account_balance" valueNumeric="0.00"/>
+            <column name="account_number" value="568-2-65851-4"/>
+            <column name="issuer" value="TestLab"/>
+            <column name="loan_amount" valueNumeric="55000.00"/>
+            <column name="interest_rate" valueNumeric="6.25"/>
+            <column name="loan_term" valueNumeric="30"/>
+            <column name="loan_start_date" valueDate="2025-05-01T00:00:00"/>
+            <column name="due_date" valueDate="2027-11-01T00:00:00"/>
+            <column name="payment_accml" valueNumeric="6000.00"/>
+            <column name="interest_accml" valueNumeric="1800.00"/>
+            <column name="remaining" valueNumeric="49000.00"/>
+        </insert>
+        <insert tableName="accounts">
+            <column name="account_id" value="u001-s002"/>
+            <column name="account_name" value="Second Saving"/>
+            <column name="user_id" value="user001"/>
+            <column name="color" value="#FF9900"/>
+            <column name="is_main_account" valueBoolean="false"/>
+            <column name="type" value="SAVING"/>
+            <column name="currency" value="THB"/>
+            <column name="account_status" value="ACTIVE"/>
+            <column name="account_balance" valueNumeric="15000.00"/>
+            <column name="account_number" value="568-2-77363-5"/>
+            <column name="issuer" value="TestLab"/>
+        </insert>
+        <insert tableName="accounts">
+            <column name="account_id" value="u002-s002"/>
+            <column name="account_name" value="Extra Savings"/>
+            <column name="user_id" value="user002"/>
+            <column name="color" value="#0099FF"/>
+            <column name="is_main_account" valueBoolean="false"/>
+            <column name="type" value="SAVING"/>
+            <column name="currency" value="USD"/>
+            <column name="account_status" value="ACTIVE"/>
+            <column name="account_balance" valueNumeric="12000.00"/>
+            <column name="account_number" value="568-2-99213-6"/>
+            <column name="issuer" value="TestLab"/>
+        </insert>
+        <insert tableName="accounts">
+            <column name="account_id" value="u003-s002"/>
+            <column name="account_name" value="Backup Savings"/>
+            <column name="user_id" value="user003"/>
+            <column name="color" value="#FF6600"/>
+            <column name="is_main_account" valueBoolean="false"/>
+            <column name="type" value="SAVING"/>
+            <column name="currency" value="THB"/>
+            <column name="account_status" value="ACTIVE"/>
+            <column name="account_balance" valueNumeric="13000.00"/>
+            <column name="account_number" value="568-2-21528-7"/>
+            <column name="issuer" value="TestLab"/>
+        </insert>
+        <insert tableName="accounts">
+            <column name="account_id" value="u004-s002"/>
+            <column name="account_name" value="Vacation Savings"/>
+            <column name="user_id" value="user004"/>
+            <column name="color" value="#00AA00"/>
+            <column name="is_main_account" valueBoolean="false"/>
+            <column name="type" value="SAVING"/>
+            <column name="currency" value="USD"/>
+            <column name="account_status" value="ACTIVE"/>
+            <column name="account_balance" valueNumeric="18000.00"/>
+            <column name="account_number" value="568-2-37882-8"/>
+            <column name="issuer" value="TestLab"/>
+        </insert>
+        <insert tableName="accounts">
+            <column name="account_id" value="u005-s002"/>
+            <column name="account_name" value="My Secure Fund"/>
+            <column name="user_id" value="user005"/>
+            <column name="color" value="#AA00FF"/>
+            <column name="is_main_account" valueBoolean="false"/>
+            <column name="type" value="SAVING"/>
+            <column name="currency" value="THB"/>
+            <column name="account_status" value="ACTIVE"/>
+            <column name="account_balance" valueNumeric="11000.00"/>
+            <column name="account_number" value="568-2-50492-9"/>
+            <column name="issuer" value="TestLab"/>
+        </insert>
+
+    </changeSet>
+</databaseChangeLog>

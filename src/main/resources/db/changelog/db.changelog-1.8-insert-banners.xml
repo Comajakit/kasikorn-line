@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <changeSet id="1.8" author="comajakit">
+        <insert tableName="banners">
+            <column name="banner_id" value="u001-banner001"/>
+            <column name="user_id" value="user001"/>
+            <column name="title" value="Want some money?"/>
+            <column name="description" value="You can start applying"/>
+            <column name="image" value="https://dummyimage.com/54x54/999/fff"/>
+        </insert>
+
+        <insert tableName="banners">
+            <column name="banner_id" value="u002-banner001"/>
+            <column name="user_id" value="user002"/>
+            <column name="title" value="Want some money?"/>
+            <column name="description" value="You can start applying"/>
+            <column name="image" value="https://dummyimage.com/54x54/999/fff"/>
+        </insert>
+
+        <insert tableName="banners">
+            <column name="banner_id" value="u003-banner001"/>
+            <column name="user_id" value="user003"/>
+            <column name="title" value="Want some money?"/>
+            <column name="description" value="You can start applying"/>
+            <column name="image" value="https://dummyimage.com/54x54/999/fff"/>
+        </insert>
+        <insert tableName="banners">
+            <column name="banner_id" value="u004-banner001"/>
+            <column name="user_id" value="user004"/>
+            <column name="title" value="Want some money?"/>
+            <column name="description" value="You can start applying"/>
+            <column name="image" value="https://dummyimage.com/54x54/999/fff"/>
+        </insert>
+        <insert tableName="banners">
+            <column name="banner_id" value="u005-banner001"/>
+            <column name="user_id" value="user005"/>
+            <column name="title" value="Want some money?"/>
+            <column name="description" value="You can start applying"/>
+            <column name="image" value="https://dummyimage.com/54x54/999/fff"/>
+        </insert>
+    </changeSet>
+</databaseChangeLog>

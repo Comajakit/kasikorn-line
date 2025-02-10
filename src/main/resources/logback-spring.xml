@@ -1,0 +1,59 @@
+<configuration>
+    <springProperty scope="context" name="springAppName" source="spring.application.name"/>
+
+    <conversionRule conversionWord="loglevelcolor"
+                    converterClass="com.kasikorn.line.core.mobile.banking.log.LogBackColorConverter"/>
+
+    <appender name="MAIN_LOG" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %loglevelcolor(%-5level) %magenta([%thread]) %cyan(%logger{36}) - %msg%n
+            </pattern>
+        </encoder>
+    </appender>
+    <appender name="ASYNC_MAIN" class="ch.qos.logback.classic.AsyncAppender">
+        <appender-ref ref="MAIN_LOG"/>
+        <queueSize>1024</queueSize>
+        <discardingThreshold>0</discardingThreshold>
+        <includeCallerData>true</includeCallerData>
+    </appender>
+
+    <appender name="TRACING" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="ASYNC_TRACING" class="ch.qos.logback.classic.AsyncAppender">
+        <appender-ref ref="TRACING"/>
+        <queueSize>1024</queueSize>
+        <discardingThreshold>0</discardingThreshold>
+        <includeCallerData>true</includeCallerData>
+    </appender>
+
+    <appender name="DETAIL_LOG" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %loglevelcolor(%-5level) %magenta([%thread]) %cyan(%logger{36}) -
+                %msg%n
+            </pattern>
+        </encoder>
+    </appender>
+
+    <appender name="ASYNC_DETAIL" class="ch.qos.logback.classic.AsyncAppender">
+        <appender-ref ref="DETAIL_LOG"/>
+        <queueSize>1024</queueSize>
+        <discardingThreshold>0</discardingThreshold>
+        <includeCallerData>true</includeCallerData>
+    </appender>
+
+    <logger name="com.kasikorn.line.core" level="TRACE"/>
+    <logger name="common.log.detail" level="TRACE" additivity="false">
+        <appender-ref ref="ASYNC_DETAIL"/>
+    </logger>
+    <logger name="common.log.tracer" level="TRACE" additivity="false">
+        <appender-ref ref="ASYNC_TRACING"/>
+    </logger>
+
+    <root level="INFO">
+        <appender-ref ref="ASYNC_MAIN"/>
+    </root>
+</configuration>

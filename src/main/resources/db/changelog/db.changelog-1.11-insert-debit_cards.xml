@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+   http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <changeSet id="1.11" author="comajakit">
+        <insert tableName="debit_cards">
+            <column name="card_id" value="00189796e1a211ef95a30242ac180002"/>
+            <column name="account_id" value="u001-s001"/>
+            <column name="user_id" value="user001"/>
+            <column name="status" value="Active"/>
+            <column name="name" value="My Debit Card"/>
+            <column name="issuer" value="TestLab"/>
+            <column name="number" value="7155 7865 7863 5723"/>
+            <column name="color" value="#00a1e2"/>
+            <column name="border_color" value="#ffffff"/>
+        </insert>
+
+        <insert tableName="debit_cards">
+            <column name="card_id" value="0018a646e1a211ef95a30242ac180003"/>
+            <column name="account_id" value="u002-s001"/>
+            <column name="user_id" value="user002"/>
+            <column name="status" value="Active"/>
+            <column name="name" value="My Debit Card"/>
+            <column name="issuer" value="TestLab"/>
+            <column name="number" value="3752 7769 7588 4638"/>
+            <column name="color" value="#00a1e2"/>
+            <column name="border_color" value="#ffffff"/>
+        </insert>
+
+        <insert tableName="debit_cards">
+            <column name="card_id" value="0018b4fbe1a211ef95a30242ac180004"/>
+            <column name="account_id" value="u003-s001"/>
+            <column name="user_id" value="user003"/>
+            <column name="status" value="Active"/>
+            <column name="name" value="My Debit Card"/>
+            <column name="issuer" value="TestLab"/>
+            <column name="number" value="3658 5805 8052 2850"/>
+            <column name="color" value="#00a1e2"/>
+            <column name="border_color" value="#ffffff"/>
+        </insert>
+
+        <insert tableName="debit_cards">
+            <column name="card_id" value="0018c49ee1a211ef95a30242ac180005"/>
+            <column name="account_id" value="u004-s001"/>
+            <column name="user_id" value="user004"/>
+            <column name="status" value="Active"/>
+            <column name="name" value="My Debit Card"/>
+            <column name="issuer" value="TestLab"/>
+            <column name="number" value="381 377 743 2586"/>
+            <column name="color" value="#00a1e2"/>
+            <column name="border_color" value="#ffffff"/>
+        </insert>
+
+        <insert tableName="debit_cards">
+            <column name="card_id" value="0018d2eae1a211ef95a30242ac180006"/>
+            <column name="account_id" value="u005-s001"/>
+            <column name="user_id" value="user005"/>
+            <column name="status" value="Active"/>
+            <column name="name" value="My Debit Card"/>
+            <column name="issuer" value="TestLab"/>
+            <column name="number" value="8509 8001 4481 8400"/>
+            <column name="color" value="#00a1e2"/>
+            <column name="border_color" value="#ffffff"/>
+        </insert>
+
+        <insert tableName="debit_cards">
+            <column name="card_id" value="0018e221e1a211ef95a30242ac180007"/>
+            <column name="account_id" value="u001-s002"/>
+            <column name="user_id" value="user001"/>
+            <column name="status" value="Active"/>
+            <column name="name" value="My Debit Card"/>
+            <column name="issuer" value="TestLab"/>
+            <column name="number" value="6909 5382 6182 4765"/>
+            <column name="color" value="#00a1e2"/>
+            <column name="border_color" value="#ffffff"/>
+        </insert>
+
+        <insert tableName="debit_cards">
+            <column name="card_id" value="0018f2d1e1a211ef95a30242ac180008"/>
+            <column name="account_id" value="u002-s002"/>
+            <column name="user_id" value="user002"/>
+            <column name="status" value="Active"/>
+            <column name="name" value="My Debit Card"/>
+            <column name="issuer" value="TestLab"/>
+            <column name="number" value="3977 7678 6463 9280"/>
+            <column name="color" value="#00a1e2"/>
+            <column name="border_color" value="#ffffff"/>
+        </insert>
+
+        <insert tableName="debit_cards">
+            <column name="card_id" value="00190196e1a211ef95a30242ac180009"/>
+            <column name="account_id" value="u003-s002"/>
+            <column name="user_id" value="user003"/>
+            <column name="status" value="Active"/>
+            <column name="name" value="My Debit Card"/>
+            <column name="issuer" value="TestLab"/>
+            <column name="number" value="6040 1400 8879 199"/>
+            <column name="color" value="#00a1e2"/>
+            <column name="border_color" value="#ffffff"/>
+        </insert>
+
+        <insert tableName="debit_cards">
+            <column name="card_id" value="00190fc2e1a211ef95a30242ac180010"/>
+            <column name="account_id" value="u004-s002"/>
+            <column name="user_id" value="user004"/>
+            <column name="status" value="Active"/>
+            <column name="name" value="My Debit Card"/>
+            <column name="issuer" value="TestLab"/>
+            <column name="number" value="8802 4515 6169 7301"/>
+            <column name="color" value="#00a1e2"/>
+            <column name="border_color" value="#ffffff"/>
+        </insert>
+
+        <insert tableName="debit_cards">
+            <column name="card_id" value="0019202ce1a211ef95a30242ac180011"/>
+            <column name="account_id" value="u005-s002"/>
+            <column name="user_id" value="user005"/>
+            <column name="status" value="Active"/>
+            <column name="name" value="My Debit Card"/>
+            <column name="issuer" value="TestLab"/>
+            <column name="number" value="4885 6574 8216 1361"/>
+            <column name="color" value="#00a1e2"/>
+            <column name="border_color" value="#ffffff"/>
+        </insert>
+    </changeSet>
+</databaseChangeLog>

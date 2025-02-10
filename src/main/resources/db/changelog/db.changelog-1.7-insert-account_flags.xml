@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <changeSet id="1.7" author="comajakit">
+        <insert tableName="account_flags">
+            <column name="account_id" value="u001-s001"/>
+            <column name="user_id" value="user001"/>
+            <column name="flag_type" value="system"/>
+            <column name="flag_value" value="Flag3"/>
+            <column name="created_at" valueDate="2025-02-05T15:08:00"/>
+            <column name="updated_at" valueDate="2025-02-05T15:08:00"/>
+        </insert>
+        <insert tableName="account_flags">
+            <column name="account_id" value="u001-sg001"/>
+            <column name="user_id" value="user001"/>
+            <column name="flag_type" value="system"/>
+            <column name="flag_value" value="Flag3"/>
+            <column name="created_at" valueDate="2025-02-05T15:08:10"/>
+            <column name="updated_at" valueDate="2025-02-05T15:08:10"/>
+        </insert>
+        <insert tableName="account_flags">
+            <column name="account_id" value="u001-l001"/>
+            <column name="user_id" value="user001"/>
+            <column name="flag_type" value="system"/>
+            <column name="flag_value" value="Flag3"/>
+            <column name="created_at" valueDate="2025-02-05T15:08:20"/>
+            <column name="updated_at" valueDate="2025-02-05T15:08:20"/>
+        </insert>
+        <insert tableName="account_flags">
+            <column name="account_id" value="u001-l001"/>
+            <column name="user_id" value="user001"/>
+            <column name="flag_type" value="system"/>
+            <column name="flag_value" value="Disbursement"/>
+            <column name="created_at" valueDate="2025-02-05T15:08:30"/>
+            <column name="updated_at" valueDate="2025-02-05T15:08:30"/>
+        </insert>
+        <insert tableName="account_flags">
+            <column name="account_id" value="u001-l001"/>
+            <column name="user_id" value="user001"/>
+            <column name="flag_type" value="system"/>
+            <column name="flag_value" value="Overdue"/>
+            <column name="created_at" valueDate="2025-02-05T15:08:40"/>
+            <column name="updated_at" valueDate="2025-02-05T15:08:40"/>
+        </insert>
+        <insert tableName="account_flags">
+            <column name="account_id" value="u002-s001"/>
+            <column name="user_id" value="user002"/>
+            <column name="flag_type" value="system"/>
+            <column name="flag_value" value="Flag3"/>
+            <column name="created_at" valueDate="2025-02-05T15:09:00"/>
+            <column name="updated_at" valueDate="2025-02-05T15:09:00"/>
+        </insert>
+        <insert tableName="account_flags">
+            <column name="account_id" value="u002-sg001"/>
+            <column name="user_id" value="user002"/>
+            <column name="flag_type" value="system"/>
+            <column name="flag_value" value="Flag3"/>
+            <column name="created_at" valueDate="2025-02-05T15:09:10"/>
+            <column name="updated_at" valueDate="2025-02-05T15:09:10"/>
+        </insert>
+        <insert tableName="account_flags">
+            <column name="account_id" value="u002-l001"/>
+            <column name="user_id" value="user002"/>
+            <column name="flag_type" value="system"/>
+            <column name="flag_value" value="Flag3"/>
+            <column name="created_at" valueDate="2025-02-05T15:09:20"/>
+            <column name="updated_at" valueDate="2025-02-05T15:09:20"/>
+        </insert>
+        <insert tableName="account_flags">
+            <column name="account_id" value="u002-l001"/>
+            <column name="user_id" value="user002"/>
+            <column name="flag_type" value="system"/>
+            <column name="flag_value" value="Disbursement"/>
+            <column name="created_at" valueDate="2025-02-05T15:09:30"/>
+            <column name="updated_at" valueDate="2025-02-05T15:09:30"/>
+        </insert>
+        <insert tableName="account_flags">
+            <column name="account_id" value="u002-l001"/>
+            <column name="user_id" value="user002"/>
+            <column name="flag_type" value="system"/>
+            <column name="flag_value" value="Overdue"/>
+            <column name="created_at" valueDate="2025-02-05T15:09:40"/>
+            <column name="updated_at" valueDate="2025-02-05T15:09:40"/>
+        </insert>
+        <insert tableName="account_flags">
+            <column name="account_id" value="u003-s001"/>
+            <column name="user_id" value="user003"/>
+            <column name="flag_type" value="system"/>
+            <column name="flag_value" value="Flag3"/>
+            <column name="created_at" valueDate="2025-02-05T15:10:00"/>
+            <column name="updated_at" valueDate="2025-02-05T15:10:00"/>
+        </insert>
+        <insert tableName="account_flags">
+            <column name="account_id" value="u003-sg001"/>
+            <column name="user_id" value="user003"/>
+            <column name="flag_type" value="system"/>
+            <column name="flag_value" value="Flag3"/>
+            <column name="created_at" valueDate="2025-02-05T15:10:10"/>
+            <column name="updated_at" valueDate="2025-02-05T15:10:10"/>
+        </insert>
+        <insert tableName="account_flags">
+            <column name="account_id" value="u003-l001"/>
+            <column name="user_id" value="user003"/>
+            <column name="flag_type" value="system"/>
+            <column name="flag_value" value="Flag3"/>
+            <column name="created_at" valueDate="2025-02-05T15:10:20"/>
+            <column name="updated_at" valueDate="2025-02-05T15:10:20"/>
+        </insert>
+        <insert tableName="account_flags">
+            <column name="account_id" value="u003-l001"/>
+            <column name="user_id" value="user003"/>
+            <column name="flag_type" value="system"/>
+            <column name="flag_value" value="Disbursement"/>
+            <column name="created_at" valueDate="2025-02-05T15:10:30"/>
+            <column name="updated_at" valueDate="2025-02-05T15:10:30"/>
+        </insert>
+        <insert tableName="account_flags">
+            <column name="account_id" value="u003-l001"/>
+            <column name="user_id" value="user003"/>
+            <column name="flag_type" value="system"/>
+            <column name="flag_value" value="Overdue"/>
+            <column name="created_at" valueDate="2025-02-05T15:10:40"/>
+            <column name="updated_at" valueDate="2025-02-05T15:10:40"/>
+        </insert>
+        <insert tableName="account_flags">
+            <column name="account_id" value="u004-s001"/>
+            <column name="user_id" value="user004"/>
+            <column name="flag_type" value="system"/>
+            <column name="flag_value" value="Flag3"/>
+            <column name="created_at" valueDate="2025-02-05T15:11:00"/>
+            <column name="updated_at" valueDate="2025-02-05T15:11:00"/>
+        </insert>
+        <insert tableName="account_flags">
+            <column name="account_id" value="u004-sg001"/>
+            <column name="user_id" value="user004"/>
+            <column name="flag_type" value="system"/>
+            <column name="flag_value" value="Flag3"/>
+            <column name="created_at" valueDate="2025-02-05T15:11:10"/>
+            <column name="updated_at" valueDate="2025-02-05T15:11:10"/>
+        </insert>
+        <insert tableName="account_flags">
+            <column name="account_id" value="u004-l001"/>
+            <column name="user_id" value="user004"/>
+            <column name="flag_type" value="system"/>
+            <column name="flag_value" value="Flag3"/>
+            <column name="created_at" valueDate="2025-02-05T15:11:20"/>
+            <column name="updated_at" valueDate="2025-02-05T15:11:20"/>
+        </insert>
+        <insert tableName="account_flags">
+            <column name="account_id" value="u004-l001"/>
+            <column name="user_id" value="user004"/>
+            <column name="flag_type" value="system"/>
+            <column name="flag_value" value="Disbursement"/>
+            <column name="created_at" valueDate="2025-02-05T15:11:30"/>
+            <column name="updated_at" valueDate="2025-02-05T15:11:30"/>
+        </insert>
+        <insert tableName="account_flags">
+            <column name="account_id" value="u004-l001"/>
+            <column name="user_id" value="user004"/>
+            <column name="flag_type" value="system"/>
+            <column name="flag_value" value="Overdue"/>
+            <column name="created_at" valueDate="2025-02-05T15:11:40"/>
+            <column name="updated_at" valueDate="2025-02-05T15:11:40"/>
+        </insert>
+        <insert tableName="account_flags">
+            <column name="account_id" value="u005-s001"/>
+            <column name="user_id" value="user005"/>
+            <column name="flag_type" value="system"/>
+            <column name="flag_value" value="Flag3"/>
+            <column name="created_at" valueDate="2025-02-05T15:12:00"/>
+            <column name="updated_at" valueDate="2025-02-05T15:12:00"/>
+        </insert>
+        <insert tableName="account_flags">
+            <column name="account_id" value="u005-sg001"/>
+            <column name="user_id" value="user005"/>
+            <column name="flag_type" value="system"/>
+            <column name="flag_value" value="Flag3"/>
+            <column name="created_at" valueDate="2025-02-05T15:12:10"/>
+            <column name="updated_at" valueDate="2025-02-05T15:12:10"/>
+        </insert>
+        <insert tableName="account_flags">
+            <column name="account_id" value="u005-l001"/>
+            <column name="user_id" value="user005"/>
+            <column name="flag_type" value="system"/>
+            <column name="flag_value" value="Flag3"/>
+            <column name="created_at" valueDate="2025-02-05T15:12:20"/>
+            <column name="updated_at" valueDate="2025-02-05T15:12:20"/>
+        </insert>
+        <insert tableName="account_flags">
+            <column name="account_id" value="u005-l001"/>
+            <column name="user_id" value="user005"/>
+            <column name="flag_type" value="system"/>
+            <column name="flag_value" value="Disbursement"/>
+            <column name="created_at" valueDate="2025-02-05T15:12:30"/>
+            <column name="updated_at" valueDate="2025-02-05T15:12:30"/>
+        </insert>
+        <insert tableName="account_flags">
+            <column name="account_id" value="u005-l001"/>
+            <column name="user_id" value="user005"/>
+            <column name="flag_type" value="system"/>
+            <column name="flag_value" value="Overdue"/>
+            <column name="created_at" valueDate="2025-02-05T15:12:40"/>
+            <column name="updated_at" valueDate="2025-02-05T15:12:40"/>
+        </insert>
+
+    </changeSet>
+</databaseChangeLog>
